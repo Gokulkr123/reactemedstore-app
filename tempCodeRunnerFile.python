@@ -1,0 +1,17 @@
+# Function to add N numbers using a for loop
+def add_numbers(n):
+    sum_result = 0
+
+    # Loop to get N numbers from the user
+    for i in range(n):
+        num = float(input(f"Enter number {i + 1}: "))
+        sum_result += num
+
+    return sum_result
+
+# Get the value of N from the user
+n = int(input("Enter the value of N: "))
+
+# Call the function and display the result
+result = add_numbers(n)
+print(f"The sum of the {n} numbers is: {result}")
